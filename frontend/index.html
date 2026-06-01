@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trinadh — CSE Student & Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════ CURSOR ═══════════════════════════════ -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-trail" id="cursorTrail"></div>
+
+  <!-- ═══════════════════════════════ NAV ══════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">DT<span class="dot">.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+      Hire Me
+    </button>
+    <button class="nav__burger" id="burger" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mob-link">About</a></li>
+      <li><a href="#skills" class="mob-link">Skills</a></li>
+      <li><a href="#projects" class="mob-link">Projects</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══════════════════════════════ HERO ═════════════════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="grid-overlay"></div>
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+      <div class="blob blob--3"></div>
+    </div>
+
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="status-dot"></span>
+        Open to Internships
+      </div>
+      <h1 class="hero__title">
+        <span class="line line--1">Durga</span>
+        <span class="line line--2"><em>Trinadh</em></span>
+      </h1>
+      <p class="hero__sub">CSE Student & Full-Stack Developer</p>
+      <p class="hero__desc">
+        Passionate about learning new technologies and building real-world projects.
+        Currently based in Kakinada, seeking software development internships.
+      </p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">View Work</a>
+        <a href="#contact" class="btn btn--ghost">Let's Talk</a>
+      </div>
+      <div class="hero__stats">
+        <div class="stat"><span class="stat__num" data-target="3">0</span><span class="stat__label">Projects</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><span class="stat__num" data-target="2">0</span><span class="stat__label">Years Study</span></div>
+        <div class="stat__divider"></div>
+        <div class="stat"><span class="stat__num" data-target="5">0</span><span class="stat__label">Internships</span></div>
+      </div>
+    </div>
+
+    <div class="hero__visual">
+      <div class="avatar-ring">
+        <div class="avatar">
+          <div class="avatar__inner">DT</div>
+        </div>
+        <svg class="ring-svg" viewBox="0 0 300 300">
+          <circle cx="150" cy="150" r="130" fill="none" stroke="rgba(255,220,100,0.2)" stroke-width="1" stroke-dasharray="4 8"/>
+          <circle cx="150" cy="150" r="110" fill="none" stroke="rgba(255,220,100,0.1)" stroke-width="1"/>
+        </svg>
+        <div class="orbit-dot orbit-dot--1">
+          <span class="orbit-icon">⚡</span>
+        </div>
+        <div class="orbit-dot orbit-dot--2">
+          <span class="orbit-icon">🚀</span>
+        </div>
+        <div class="orbit-dot orbit-dot--3">
+          <span class="orbit-icon">✦</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ ABOUT ════════════════════════════════ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-tag">01 — About</div>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <h2 class="section-title">Building with<br/>code &amp; <em>curiosity.</em></h2>
+          <p>
+            I'm Ranganadham Durga Trinadh, a 3rd-year CSE student at Pragati Engineering College
+            passionate about frontend and full-stack development. I love turning ideas into real,
+            working web experiences.
+          </p>
+          <p>
+            My goal is to secure internships in software development where I can gain real-world experience,
+            enhance my coding skills, and contribute effectively to team projects. Always learning, always building.
+          </p>
+          <div class="about__highlights">
+            <div class="highlight">
+              <span class="highlight__icon">🎓</span>
+              <div>
+                <strong>B.Tech — Computer Science & Engineering</strong>
+                <span>Pragati Engineering College, Kakinada</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="highlight__icon">💼</span>
+              <div>
+                <strong>5 Virtual Internships Completed</strong>
+                <span>AWS · UiPath · Google · Qiskit · Java Full Stack</span>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="highlight__icon">🌍</span>
+              <div>
+                <strong>Open Source Enthusiast</strong>
+                <span>Projects on GitHub — growing every day!</span>
+              </div>
+            </div>
+          </div>
+          <a href="Trinadh_Resume.pdf" download="Trinadh_Resume.pdf" class="btn btn--outline" id="downloadCV">Download Resume ↓</a>
+        </div>
+        <div class="about__card-stack reveal">
+          <div class="card-float card-float--1">
+            <div class="cf__label">Current Stack</div>
+            <div class="cf__tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+              <span>React</span><span>Python</span><span>C</span>
+            </div>
+          </div>
+          <div class="card-float card-float--2">
+            <div class="cf__num">5★</div>
+            <div class="cf__text">Internships done</div>
+          </div>
+          <div class="card-float card-float--3">
+            <div class="cf__label">🟢 Available Now</div>
+            <div class="cf__text">Open for internships</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ SKILLS ═══════════════════════════════ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-tag">02 — Skills</div>
+      <h2 class="section-title reveal">Tools of the<br/><em>trade.</em></h2>
+
+      <div class="skills__grid">
+        <div class="skill-category reveal">
+          <div class="skill-cat__icon">⟨/⟩</div>
+          <h3>Frontend</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-skill="HTML" data-level="80"></div>
+            <div class="skill-bar" data-skill="CSS" data-level="70"></div>
+            <div class="skill-bar" data-skill="JavaScript" data-level="75"></div>
+            <div class="skill-bar" data-skill="React" data-level="65"></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat__icon">⚙</div>
+          <h3>Programming</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-skill="Python" data-level="72"></div>
+            <div class="skill-bar" data-skill="C" data-level="70"></div>
+            <div class="skill-bar" data-skill="Java (Basic)" data-level="50"></div>
+            <div class="skill-bar" data-skill="Backend (Learning)" data-level="35"></div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <div class="skill-cat__icon">☁</div>
+          <h3>CS Subjects & Tools</h3>
+          <div class="skill-bars">
+            <div class="skill-bar" data-skill="Operating Systems" data-level="75"></div>
+            <div class="skill-bar" data-skill="DBMS" data-level="70"></div>
+            <div class="skill-bar" data-skill="Quantum Computing" data-level="45"></div>
+            <div class="skill-bar" data-skill="Git & GitHub" data-level="70"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-marquee">
+        <div class="marquee-track">
+          <span>HTML</span><span>•</span>
+          <span>CSS</span><span>•</span>
+          <span>JavaScript</span><span>•</span>
+          <span>React</span><span>•</span>
+          <span>Python</span><span>•</span>
+          <span>C</span><span>•</span>
+          <span>Java</span><span>•</span>
+          <span>DBMS</span><span>•</span>
+          <span>OS</span><span>•</span>
+          <span>Qiskit</span><span>•</span>
+          <span>UiPath</span><span>•</span>
+          <span>Git</span><span>•</span>
+          <span>HTML</span><span>•</span>
+          <span>CSS</span><span>•</span>
+          <span>JavaScript</span><span>•</span>
+          <span>React</span><span>•</span>
+          <span>Python</span><span>•</span>
+          <span>C</span><span>•</span>
+          <span>Java</span><span>•</span>
+          <span>DBMS</span><span>•</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ PROJECTS ══════════════════════════════ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-tag">03 — Projects</div>
+      <div class="projects__header">
+        <h2 class="section-title reveal">Selected<br/><em>work.</em></h2>
+        <div class="filter-tabs reveal">
+          <button class="filter-tab active" data-filter="all">All</button>
+          <button class="filter-tab" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-tab" data-filter="frontend">Frontend</button>
+        </div>
+      </div>
+
+      <div class="projects__grid" id="projectsGrid">
+        <div class="projects-loading">
+          <div class="spinner"></div>
+          <span>Loading projects…</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ TESTIMONIALS ══════════════════════════ -->
+  <section class="testimonials section" id="testimonials">
+    <div class="container">
+      <div class="section-tag">04 — Kind Words</div>
+      <h2 class="section-title reveal">Support from<br/><em>people.</em></h2>
+      <div class="testimonials__track" id="testimonialsTrack"></div>
+      <div class="testimonials__dots" id="testimonialDots"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ CONTACT ═══════════════════════════════ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-tag">05 — Contact</div>
+      <div class="contact__grid">
+        <div class="contact__left reveal">
+          <h2 class="section-title">Let's build<br/>something <em>great.</em></h2>
+          <p>Have an internship opportunity or a project in mind? I'd love to hear about it. Send me a message and I'll get back within 24 hours.</p>
+          <div class="contact__links">
+            <a href="mailto:durgatrinadhranganadham@gmail.com" class="contact__link">
+              <span class="cl__icon">✉</span>
+              durgatrinadhranganadham@gmail.com
+            </a>
+            <a href="https://github.com/DurgaTrinadh" target="_blank" class="contact__link">
+              <span class="cl__icon">⌥</span>
+              github.com/DurgaTrinadh
+            </a>
+            <a href="https://www.linkedin.com/in/durga-trinadh-ranganadham-82b37a32b/" target="_blank" class="contact__link">
+              <span class="cl__icon">in</span>
+              linkedin.com/in/durga-trinadh-ranganadham
+            </a>
+          </div>
+        </div>
+        <div class="contact__form-wrap reveal">
+          <form class="contact__form" id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Your name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+              <span class="form-error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+              <span class="form-error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Internship opportunity" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+              <span class="form-error" id="messageError"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full" id="submitBtn">
+              Send Message
+              <span class="btn__arrow">→</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✓ Message sent! I'll be in touch soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════ FOOTER ═══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__logo">DT<span class="dot">.</span></div>
+        <p class="footer__copy">© 2026 Ranganadham Durga Trinadh. Built with ❤️ &amp; JavaScript.</p>
+        <div class="footer__socials">
+          <a href="https://github.com/DurgaTrinadh" target="_blank" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/durga-trinadh-ranganadham-82b37a32b/" target="_blank" aria-label="LinkedIn">LI</a>
+          <a href="mailto:durgatrinadhranganadham@gmail.com" aria-label="Email">✉</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
