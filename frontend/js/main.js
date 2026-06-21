@@ -154,13 +154,13 @@ const MY_PROJECTS = [
   },
   {
     _id: '3',
-    title: 'Movix Loop',
-    description: 'A sleek and responsive movie web app built with ReactJS and powered by the TMDB API. Browse trending movies, search titles, and add your favorites to a personalized watchlist.',
-    tags: ['React', 'TMDB API', 'JavaScript', 'CSS'],
+    title: 'TaskFlow',
+    description: 'A real-time collaborative task management app built with React and Socket.io. Features JWT authentication, live updates across users, and a MongoDB-backed API for persistent task tracking.',
+    tags: ['React', 'Socket.io', 'JWT', 'MongoDB'],
     category: 'fullstack',
-    emoji: '🎬',
-    liveUrl: 'https://movix-loop.vercel.app/',
-    githubUrl: 'https://github.com/DurgaTrinadh/Movix-Loop.git'
+    emoji: '✅',
+    liveUrl: 'https://task-manager-weld-kappa.vercel.app/',
+    githubUrl: 'https://github.com/DurgaTrinadh/task-manager'
   }
 ];
 
@@ -217,12 +217,6 @@ setTimeout(initProjectFilter, 100);
 
 /* ── Testimonials ────────────────────────────────── */
 const TESTIMONIALS = [
-  {
-    quote: "Trinadh is one of the most enthusiastic and hardworking students I have taught. His curiosity for new technologies and dedication to his projects always stands out. He has great potential in software development.",
-    name: "Faculty Mentor",
-    role: "Pragati Engineering College, CSE Dept.",
-    initials: "FM"
-  },
   {
     quote: "Working with Trinadh on team projects is always a pleasure. He is collaborative, open to feedback, and genuinely puts effort into making things work. A reliable teammate who keeps pushing the team forward.",
     name: "College Friend & Teammate",
